@@ -1,0 +1,44 @@
+class Person {
+	String first_name;
+	String last_name;
+	
+	public Person(String first_name, String last_name) {
+		this.first_name = first_name;
+		this.last_name = last_name;
+	}
+}
+
+class Table
+    {
+		String[] name_columns;
+		Person[] persons;
+		Int pointer;
+		
+		public Table() {
+			this.name_columns[2];
+			this.persons;
+			this.pointer = 0;
+		}
+		
+		public void insertColumnNames(String column1, String column2){
+			this.name_columns[0] = column1;
+			this.name_columns[1] = column2;
+		}
+		
+		public void insertRow(Person person) {
+			this.persons[pointer] = person;
+			pointer += 1;
+		}
+		
+		public string getValue(String name_column, int temp) {
+			if (persons[temp] != null) {
+				if (name_column == "first_name") {
+					return persons[temp].first_name;
+				}
+				else if (name_column == "last_name") {
+					return persons[temp].last_name;
+				}
+			}
+		
+		}
+    }
